@@ -1,0 +1,26 @@
+.nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F2EFE4;
+}
+
+.nav_item {
+  float: left;
+}
+
+.nav_item a {
+  color: #4C3327;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav_item a:hover,
+.nav_item .active {
+  color: #BD3632;
+  border-bottom: 2px solid #BD3632;
+}
