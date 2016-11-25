@@ -1,8 +1,7 @@
 import styles from './footer.css'
-import React from 'react'
-import { Link, IndexLink } from 'react-router'
+import { h, Component } from 'preact'
 
-export default class Footer extends React.Component {
+export default class Footer extends Component {
   render() {
     return (
       <div className={styles.footer}>

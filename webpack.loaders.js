@@ -4,7 +4,7 @@ module.exports = [
     exclude: /(node_modules|bower_components|public)/,
     loader: "babel",
     query: {
-      presets: ['es2015', 'react']
+      presets: ['es2015']
     }
   },
   {

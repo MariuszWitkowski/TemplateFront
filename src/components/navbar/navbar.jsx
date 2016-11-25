@@ -1,14 +1,15 @@
 import styles from './navbar.css'
-import React from 'react'
-import { Link, IndexLink } from 'react-router'
 
-export default class NavBar extends React.Component {
+import { h, Component } from 'preact'
+import { Link } from 'preact-router'
+
+export default class NavBar extends Component {
   render() {
     return (
       <ul className={styles.nav_bar}>
-        <li className={styles.nav_item}><IndexLink to="/" activeClassName={styles.active}>Home</IndexLink></li>
-        <li className={styles.nav_item}><Link to="about" onlyActiveOnIndex={false} activeClassName={styles.active}>About</Link></li>
-        <li className={styles.nav_item}><Link to="login" onlyActiveOnIndex={false} activeClassName={styles.active}>Login</Link></li>
+        <li className={styles.nav_item}><Link href="/" activeClassName={styles.active} className={styles.active}>Home</Link></li>
+        <li className={styles.nav_item}><Link href="/about" onlyActiveOnIndex={false} activeClassName={styles.active}>About</Link></li>
+        <li className={styles.nav_item}><Link href="/login" onlyActiveOnIndex={false} activeClassName={styles.active}>Login</Link></li>
       </ul>
     )
   }
